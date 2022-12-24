@@ -14,17 +14,41 @@
 
     <!-- Main-nav -->
     <div class="body-cont">
+
+       <!-- </div>
+                   <label  id="dark-change"></label>
+          </div> -->
+
+
         <nav>
 
             
-        <i class="fa fa-bars"></i>
-        
+        <!-- <i class="fa fa-bars"></i> -->
+
+
+       <button class="openbtn" onclick="openNav()"> 
+    <img  src="images/icon-menu.svg" alt=""  class="hamburger-menu" >    
+     </button>
+ 
+
+
+
+<!-- 
+     <button class="openbtn" onclick="openNav()">
+      <img src="images/icon-menu.svg" alt="" class="hamburger">
+    </button> -->
+
+
+
         <div class="logo-div-header">
           <a href="./index.html"> <img src="images/brainwave logo 2.svg" alt="brainwave logo" class="logo-div"/></a>
         </div>
+
+
         <div class="nav-list">
           <div class="nav-list-div">
           <ul class="header-ul">
+            
             <li class="header-list"><a href="./index.html" class="header-link about">Home</a></li>
             <li class="header-list">
               <a href="./blog.html" class="header-link ">Blogs</a>
@@ -42,11 +66,96 @@
               </li>
               <button class="header-btn">Sign Up</button>
             </ul>
-            <label  id="dark-change"></label>
+            <!-- <label  id="dark-change"></label> -->
+            
           </div>
+                   <label  id="dark-change"></label>
+          </div>
+
+
+
+
+
+
+          <!-- SIDEPANEL / HAMBURGER-->
+
+
+
+          <div class="nav-div-2  sidepanel   label" id="mySidepanel">
+
+
+
+
+            
+            <div class="side-link-div">
+
+
+                <div class="side-link">
+                    <a href="">Home</a>
+                    <a href="">Blog</a>
+                     <a href="">Write</a>
+                      <a href="">Contact-Us</a>
+                       <a href="">Log in</a>
+                        <a href="">Sign Up</a>
+
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> <img src="images/icon-close.svg" alt="" class="close"> </a>      
+                    
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
           </div>
 
             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           </nav>
 
         
@@ -54,13 +163,20 @@
         <!-- Header Section -->
         <header>
 
+
+                
+              <div class="up-div">       
+                           
+             <img src="contact us imgs/Vector (3-).png" alt="" class="up">
+
+             </div> 
+
+
+                
             <div class="header-box">
-                <!-- <img src="./land imgs/wave (3).svg" alt="" class="wave"> -->
+        
 
                 <div class="header-cont">
-                    <!-- <div class="girl-img-m">
-                        <img src="./land imgs/young woman studying online.svg" alt="" class="" width="90%">
-                    </div> -->
                     <div class="true-content">
 
                         <h1 class="true-h1">Be the True Wave
@@ -107,7 +223,8 @@
 
 
         <div class="trend-container">
-            <div class="sec-trend" id= "mobile">
+
+            <div class="sec-trend1" id= "mobile">
                 <div>
                     <div class="trend-card">
                         <img src="land imgs/ambition.svg" class="dream">
@@ -133,7 +250,7 @@
 
 
             <!-- second trend -->
-            <div class="sec-trend">
+            <div class="sec-trend2">
                 <div>
                     <div class="trend-card">
                         <img  src="land imgs/Richird-norton.svg" class="dream">
@@ -145,11 +262,11 @@
                 </div>
 
                 <div class="auth-cont2">
-                    <img src="land imgs/Ngozi.svg">
+                    <img src="land imgs/Ngozi.svg" class="ngozi">
                     <div class="auth-right">
-                        <h3>Ngozi</h3>
+                        <h3 class="k-h3">Ngozi</h3>
                         <div>
-                            <p>October 7,2022 - 2 min Read</p>
+                            <p class="k-p">October 7,2022 - 2 min Read</p>
                         </div>
 
 
@@ -160,7 +277,7 @@
             </div>
 
             <!-- Third trend -->
-            <div class="sec-trend">
+            <div class="sec-trend3">
                 <div>
                     <div class="trend-card">
                         <img  src="land imgs/hidden-cause.svg" class="dream">
@@ -189,6 +306,33 @@
             </div>
 
 
+
+
+
+            
+            <div class="sec-trend4">
+                <div>
+                    <div class="trend-card">
+                        <img  src="images/Frame 13.png" class="dream">
+                        <h2 class="dest">5 Quotes to Help You Defeat Procrastination</h2>
+                        <p class="p3-trend">Procrastination has many causes. Thankfully, itr also has many solutions. -Procrastinantion is a dangaerous thing. It is faily innocuous if done occasionally, but if it is chronic, it can rob you of the ability to reach your.... </p>
+                    </div>
+
+                </div>
+
+                <div class="auth-cont3" id="kar">
+                    <img src="land imgs/karen.svg" class="karen2">
+                    <div class="auth-right">
+                        <h3 class="k-h3">Karen Nimbo</h3>
+                        <div>
+                            <p class="k-p">July 16,2021 - 5 min Read</p>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
 
         </div>
 
@@ -482,15 +626,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
                 
 
                 <!-- 
@@ -500,30 +635,56 @@
         </section>
     </div>
 
-    <footer>
+    
+
+
+
+    <footer class="ffoooter">
+
+
+           
+          
+              <div class="down-div">                  
+             <img src="contact us imgs/Vector (3-).png" alt="" class="down">
+             </div>
+
+
+              <div class="ffooter">  
+
+    
+
         <div class="div-footer-one">
           <div class="logo-div-footer">
             <img src="images/Brain wave 1.svg" alt="brainwave logo" class="footer-logo"/>
           </div>
           <div class="social">
             <h4>Connections</h4>
-            <!-- <div class="social-icons">
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-twitter"></i>
-              <i class="fa-brands fa-youtube"></i>
-              <i class="fa-brands fa-pinterest"></i>
-              <i class="fa-brands fa-behance"></i>
-            </div> -->
+             <div class="social-icons">
+
+              <a href=""> <img src="img for blog page/facebook.svg" alt=""> </a>
+
+                
+               <a href="">   <img src="img for blog page/twitter.svg" alt=""> </a>
+
+              <a href=""> <img src="img for blog page/youtube.svg" alt="">  </a>
+
+               
+            <a href="">   <img src="img for blog page/pinterest.svg" alt="">  </a>
+
+            <a href="">      <img src="img for blog page/behance.svg" alt="">  </a>
+
+            
+            </div>
           </div>
         </div>
         <div class="footer-list">
           <ul class="footer-ul">
-            <li class="footer-li"><b>Explore</b></li>
+           <a href="#" class="exp-a"><li  class="footer-li"><b>Explore</b></li></a> 
             <li class="footer-li">
               <a href="#" class="footer-link">About Us</a>
             </li>
             <li class="footer-li">
-              <a href="#" class="footer-link">Contact Us</a>
+              <a href="contact-us.html" class="footer-link">Contact Us</a>
             </li>
             <li class="footer-li">
               <a href="./faq.html" class="footer-link">FAQ</a>
@@ -534,7 +695,24 @@
           <input type="email" placeholder="Email" required/>
           <button class="footer-btn">Subscibe</button>
         </div>
+
+
+
+         </div>
+
       </footer>
+ 
+
+
+
+
+
+
+
+
+
+
+
     <script src="theme.js"></script>
 </body>
 
