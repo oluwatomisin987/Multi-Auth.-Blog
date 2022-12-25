@@ -1116,7 +1116,7 @@ label {
   width: 55px;
   height: 30px;
   right: 20px;
-  top: 23px;
+  top: 19px;
 }
 
 label:before {
@@ -1140,12 +1140,13 @@ label:before {
 
 /* The sidepanel menu */
 .sidepanel {
-  height: 70%; /* Specify a height */
+  height: 95%; /* Specify a height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
   top: 0;
   background-color: #fff;
+  padding: 0px;
   left: 0; 
   overflow-x: hidden; 
   padding-top: 0px; 
@@ -1155,10 +1156,12 @@ label:before {
 
 /* The sidepanel links */
 .sidepanel a {
-   padding: 8px 1px 8px 15px; 
+   padding: 15px 0px 10px 25px; 
+   /* border: 4px solid yellow; */
   text-decoration: none;
-  /* font-size: 25px; */
+  font-size: 20px;
   /* color: #818181; */
+  text-align: left;
   color: #555555;
   display: block;
   overflow: hidden;
@@ -1174,13 +1177,29 @@ label:before {
 
 /* Position and style the close button (top right corner) */
 .sidepanel .closebtn {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0px;
   /* right: 0px; */
   font-size: 36px;
   margin-left: 20px;
-  /* width: 30%; */
+  /* width: 100%; */
+}
+
+.side-btn{
+  padding: 7px 15px 7px 15px;
+  font-size: 17px;
+  line-height: 25px;
+  margin-left: 10px;
+  margin-top: 15px;
+  border-radius: 12px;
+  background: #0f1b33;
+  color: #fff;
+}
+
+.special-a{
+  padding: 0px;
+  border: 15px solid red;
 }
 
 /* Style the button that is used to open the sidepanel */
@@ -1200,12 +1219,11 @@ label:before {
 }
 
 .closebtn{
-  /* border: 4px solid red;
-  right: 10px;
-  top: 0;
-  position: fixed;
-  display: block; */
-  /* width: 410%; */
+
+}
+
+.close{
+width: 10%;
 }
 
 
@@ -1214,7 +1232,8 @@ label:before {
 
 .side-link{
   /* border: 4px solid blueviolet; */
-  padding-top: 50px;
+
+  /* padding-top: 50px; */
 }
 
 .logo-div-header{
@@ -1438,12 +1457,14 @@ margin: 15px;
 
 .p2-trend {
   padding-top: 15px;
+  margin-bottom: 15px;
   width: 100%;
   font-size: 12px;
   line-height: 15px;
 }
 
 .p3-trend {
+  margin-bottom: 5px;
   width: 100%;
   padding-top: 15px;
   font-size: 12px;
@@ -1692,13 +1713,31 @@ width: 100%;
 
 .auth-name {
   font-family: "Cascadia Code";
-  font-weight: 400;
+  font-weight: 500;
 
-  font-size: 5.48752px;
-  line-height: 15px;
+  font-size: 12px;
+  line-height: 16px;
   color: #000000;
 }
 
+.auth-main-top:hover{
+  transform: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+
+.auth-date {
+  font-family: "Cascadia Code";
+
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 7px;
+  display: flex;
+  align-items: center;
+
+  color: #6c757d;
+}
 .top-big-h22 {
   /* border: 3px solid gold; */
   font-family: "Cascadia Code";
@@ -1745,15 +1784,21 @@ display: none;
 .first-upp{
   display: flex;
   justify-content: space-between;
+  width: 100%;
   /* border: 3px solid black; */
+}
 
+.last-h44{
+  color: #fff;
+  line-height: 25px;
 }
 
 .sub{
   background-color: #0f1b33;
   /* padding: 9px, 14px, 9px, 14px; */
     position: absolute;
-  right: 3em;
+  right: 18px;
+  margin-bottom: px;
   color: #fff;
   /* padding: 1em; */
   padding-top: 15px;
@@ -1763,10 +1808,21 @@ display: none;
   border: none;
   border-radius: 12px;
   font-size: 20px;
-  /* width: 10%; */
+  width: 30%;
   font-family: "Cascadia Code", sans-serif;
 
 }
+
+.last-sub{
+  /* border: 3px solid red; */
+  width: 100%;
+}
+
+.inputtt{
+  width: 70%;
+}
+
+
 
 
 
