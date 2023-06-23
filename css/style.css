@@ -7,9 +7,10 @@
   text-decoration: none;
 }
 
-body {
-  background-color: #ffffff;
-  width: 100%;
+.body {
+  background-color: #fff;
+  /* border: 61px solid blue; */
+  width:100%;
   /* border: 4px solid red; */
 
   /* margin: 0 auto;
@@ -20,6 +21,7 @@ body {
   /* border: 4px solid red; */
   padding-left: 20px;
     padding-right: 20px;
+   
 }
 h1,
 h2,
@@ -35,7 +37,7 @@ p {
 /* CSS for Theme mode */
 label {
   position: absolute;
-  width: 45px;
+  width: 50px;
   height: 27px;
   right: 40px;
   top: 32px;
@@ -61,12 +63,15 @@ label.active:before {
  body.night {
   background: #000;
   color: #fff;
+  
 } 
 
 /* End of css for theme mode */
 
 
-
+.header-link{
+  border: 3px solid khaki;
+}
 
 .hamburger-menu{
   display: none;
@@ -170,6 +175,16 @@ a:hover {
 
 
 
+
+
+
+
+
+
+
+
+
+
 /* Css for main nav */
 
 .up-div{
@@ -178,8 +193,6 @@ a:hover {
   width: 97%;
   
 }
-
-
 
 .up{
   /* border: 4px solid red; */
@@ -210,15 +223,13 @@ background-image: url(images/wave.png);
   height: auto;
   background-image: url(images/wave.png);
     background-repeat: no-repeat;
-  /* margin-bottom: 50px; */
   margin: 0 auto;
-  /* padding-top: 60px; */
-  /* position: relative; */
   background-color: #3e71d4;
 }
 .header-box-m{
   display: none;
 }
+
 /* .wave {
   width: 50%;
   position: absolute;
@@ -229,8 +240,6 @@ background-image: url(images/wave.png);
   /* border: 4px solid gold; */
   display: flex;
   flex-direction: row;
-  /* position: relative; */
-  /* top: 190px; */
   justify-content: center;
   align-items: center;
 }
@@ -319,6 +328,7 @@ background-image: url(images/wave.png);
 .trend-nav {
   display: flex;
   justify-content: space-between;
+
    margin-top: 60px;
    margin-bottom: 10px;
   /* border-bottom: 1px solid  #AAAAAA;  */
@@ -380,41 +390,60 @@ background-image: url(images/wave.png);
 
 .trend-container {
   /* border: 5px solid green; */
-   display: flex;
+   display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
    width: 100%;
-  justify-content: space-between;
-  padding-top: 25px;
-  /* padding-left: 20px; */
+   gap: 40px;
+  padding-top: 2.5rem;
 }
-.rich{
-  /* width: 378.91px;
-  height: 343.62px; */
-}
+
+
 .sec-trend1 {
   /* border: 3px solid gold; */
- width: 30.3%;
+ /* width: 30.3%; */
+ /* width: 50%; */
 } 
 
 
 
 .sec-trend2 {
   /* border: 3px solid gold; */
- width: 30.3%;
+ /* width: 30.3%; */
+  /* width: 50%; */
 }
 
 .sec-trend3 {
   /* border: 3px solid gold; */
- width: 30.3%;
+ /* width: 30.3%; */
+  /* width: 100%; */
+    /* width: 50%; */
 }
 
 .sec-trend4 {
   /* border: 3px solid gold; */
   display: none;
- width: 30.3%;
+   /* width: 50%; */
+     /* width: 50%; */
+ /* width: 30.3%; */
 }
 
+
+
 .dream{
+  /* width: 100%; */
   width: 100%;
+  /* height: 375px; */
+  /* border: 3px solid red; */
+}
+
+  .first-img{
+    width: 373px;
+    height: 369px;
+    /* border-radius: 80px; */
+  }
+
+.dream1{
+  
 }
 .sec-trend:hover{
   transform: translateY(-5px);
@@ -438,27 +467,27 @@ border: 4px solid limegreen;
 
 .p1-trend {
   width: 90%;
-  padding-top: 39px;
-  font-size: 14.71px;
-  line-height: 18.39px;
+  padding-top: 2.6rem;
+    font-size: 1em;
+  line-height: 1.4rem;
   color: #555555;
   font-weight: 600;
 }
 
 .p2-trend {
-  padding-top: 20px;
+  padding-top: 1.5rem;
   width: 90%;
-  font-size: 14.71px;
-  line-height: 18.39px;
+    font-size: 1em;
+ line-height: 1.4rem;
   color: #555555;
   font-weight: 600;
 }
 
 .p3-trend {
   width: 90%;
-  padding-top: 20px;
-  font-size: 14.71px;
-  line-height: 18.39px;
+  padding-top: 1.2rem;
+  font-size: 1em;
+  line-height: 1.4rem;
   color: #555555;
   font-weight: 600;
 } 
@@ -469,8 +498,8 @@ border: 4px solid limegreen;
 .dest3 {
   font-family: "Cascadia Code";
   font-weight: 600;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 2em;
+  line-height: 1.7rem;
   color: #3e71d4;
 }
 
@@ -485,14 +514,16 @@ border: 4px solid limegreen;
   display: flex;
   padding-top: 70px;
   align-items: center;
+  border: 4px solid red;
 }
 .auth-cont2 {
   display: flex;
-  padding-top: 65px;
+  /* border: 3px solid red; */
+  padding-top: 3rem;
 }
 .auth-cont3 {
   display: flex;
-  padding-top: 30px;
+  padding-top: 2rem;
 }
 .auth-right {
   display: flex;
@@ -1096,10 +1127,56 @@ input:placeholder-shown {
 
 
 
+
+@media screen and (max-width:1255px) {
+
+.trend-container {
+  /* border: 5px solid green; */
+   display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+   width: 100%;
+   gap: 30px;
+  padding-top: 2.5rem;
+}
+  
+}
+
+
+@media screen and (max-width:1011px) {
+
+.trend-container {
+  /* border: 5px solid green; */
+   display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+   width: 100%;
+   gap: 30px;
+  padding-top: 2.5rem;
+}
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* mobile view */
 
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
 
   body {
   background-color: #ffffff;
@@ -1422,65 +1499,78 @@ margin: 15px;
 .trend-container {
   /* border: 5px solid green; */
    display: flex;
+   flex-direction: column;
    width: 95%;
    margin: auto;
   justify-content: space-between;
-  padding-top: 7px;
+  padding-top: 0.7rem;
   /* padding-left: 20px; */
 }
 
-.sec-trend1{
-  display: none;
-}
+ .sec-trend1{
+  display: block;
+  width: 100%;
+} 
 
 .sec-trend2{
   display: block;
-  width: 47%;
+  width: 100%;
 }
 
-.sec-trend3{
-  display: none;
-}
+ .sec-trend3{
+  display: block;
+  width: 100%;
+} 
 
 .sec-trend4{
   display: block;
-  width: 47%;
+  width: 100%;
 }
 
 .dest {
-  padding-top: 13px;
+  padding-top: 0.8rem;
   width: 100%;
-  font-size: 14px;
-  line-height: 15px;
+  font-size: 1.5em;
+  line-height: 1.8rem;
+  /* border: 4px solid red; */
 }
 
+.p1-trend{
+ padding-top: 0.8rem;
+  margin-bottom: 1rem;
+  width: 100%;
+ font-size: 0.9em;
+  line-height: 1.2rem;
+}
 
 .p2-trend {
-  padding-top: 15px;
-  margin-bottom: 15px;
+ 
+ padding-top: 0.9rem;
+   margin-bottom: 1rem;
   width: 100%;
-  font-size: 12px;
-  line-height: 15px;
+ font-size: 1em;
+  line-height: 1.2rem;
 }
 
 .p3-trend {
-  margin-bottom: 5px;
+  margin-bottom: 1rem;
   width: 100%;
-  padding-top: 15px;
-  font-size: 12px;
-  line-height: 16px;
+   padding-top: 0.8rem;
+ font-size: 0.9em;
+  line-height: 1.2rem;
 }
 
 .auth-cont2 {
   display: flex;
   padding-top: 0px;
   margin-top: auto;
-  /* border: 4px solid red; */
+  border: 4px solid red;
 }
 .auth-cont3 {
   display: flex;
   padding-top: 0px;
   margin-top: auto;
+    border: 4px solid red;
 }
 
 .auth-right {
@@ -1775,14 +1865,12 @@ display: none;
 
 .downn{
   /* border: 4px solid wheat; */
-  position: absolute;
-  left: 0;
-  /* margin: auto; */
-  width: 98%;
-  margin-top: 50px;
+  display: none;
+ 
 }
 .first-upp{
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   width: 100%;
   /* border: 3px solid black; */
@@ -1798,7 +1886,7 @@ display: none;
   /* padding: 9px, 14px, 9px, 14px; */
     position: absolute;
   right: 18px;
-  margin-bottom: px;
+  /* margin-bottom: px; */
   color: #fff;
   /* padding: 1em; */
   padding-top: 15px;
@@ -1814,7 +1902,8 @@ display: none;
 }
 
 .last-sub{
-  /* border: 3px solid red; */
+  border: 3px solid red;
+
   width: 100%;
 }
 
@@ -1822,6 +1911,7 @@ display: none;
   width: 70%;
 }
 
+}
 
 
 
@@ -1840,66 +1930,145 @@ display: none;
 
 
 
+@media (max-width: 700px) {
 
+.nav-list-div {
+    display: none;
+}
 
 
+label {
+  width: 55px;
+  height: 30px;
+  right: 50px;
+  top: 19px;
+}
 
+label:before {
+  width: 25px;
+  height: 25px;
+  border-radius: 53%;
 
+}
 
+.hamburger-menu{
+  /* border: 3px solid blue; */
+  display: block;
+  margin-right: 15px;
+  /* width: 100%; */
+}
 
+.nav-div-2{
+  display: block;
+}
 
 
+/* The sidepanel menu */
+.sidepanel {
+  height: 95%; /* Specify a height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  background-color: #fff;
+  padding: 0px;
+  left: 0; 
+  overflow-x: hidden; 
+  padding-top: 0px; 
+  transition: 0.5s;
+}
 
 
+/* The sidepanel links */
+.sidepanel a {
+   padding: 15px 0px 10px 25px; 
+   /* border: 4px solid yellow; */
+  text-decoration: none;
+  font-size: 20px;
+  /* color: #818181; */
+  text-align: left;
+  color: #555555;
+  display: block;
+  overflow: hidden;
+  transition: 0.9s;
+}
 
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
 
 
 
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  /* position: absolute; */
+  top: 0;
+  left: 0px;
+  /* right: 0px; */
+  font-size: 36px;
+  margin-left: 20px;
+  /* width: 100%; */
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.side-btn{
+  padding: 7px 15px 7px 15px;
+  font-size: 17px;
+  line-height: 25px;
+  margin-left: 10px;
+  margin-top: 15px;
+  border-radius: 12px;
+  background: #0f1b33;
+  color: #fff;
+}
+
+.special-a{
+  padding: 0px;
+  border: 15px solid red;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+  /* font-size: 20px; */
+  display: block;
+  cursor: pointer;
+  background:none;
+  color: white;
+  /* padding: 10px 15px; */
+  border: none;
+  /* border: 4px solid green; */
+}
+
+.openbtn:hover {
+  /* background-color: #444; */
+}
+
+.closebtn{
+
+}
+
+.close{
+width: 10%;
+}
+
+
+
+
+
+.side-link{
+  /* border: 4px solid blueviolet; */
+
+  /* padding-top: 50px; */
+}
+
+.logo-div-header{
+  width: 70%;
+}
+
+.logo-div{
+  width: 100%;
+  /* border: 4px solid red; */
+  /* width: 100%; */
+}
 
 }
