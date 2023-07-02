@@ -138,6 +138,7 @@ body.night {
     border-radius: 12px;
     font-family: "Cascadia Code", Consolas, "Courier New", monospace;
     font-size: 1.2rem;
+    cursor: pointer;
   }
   .header-btn:hover {
     opacity: 0.8;
@@ -450,7 +451,7 @@ input:placeholder-shown {
 .footer-btn {
   /* border: 3px solid yellow; */
   position: absolute;
-  right: 4em;
+  right: 5rem;
   background-color: #000;
   color: #fff;
   padding: 1em;
@@ -856,15 +857,31 @@ input:placeholder-shown {
     margin-top: 25px;
 }
 
+
+.subb{
+  background-color: #0f1b33;
+    position: absolute;
+  right: 1rem;
+  color: #fff;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.2em;
+  width: 30%;
+  font-family: "Cascadia Code", sans-serif;
+
+}
+
 .last-sub{
-  border: 3px solid red;
+  /* border: 3px solid red; */
   width: 100%;
-  display: flex;
-  height: 40px;
+  /* display: flex; */
+  /* height: 40px; */
 }
 
 .inputtt{
   width: 70%;
+  /* border: 4px solid yellowgreen; */
 }
 
 
@@ -1035,21 +1052,21 @@ input:placeholder-shown {
 nav{
   width: 100%;
   margin: 0 auto;
-  border: 5px solid yellowgreen;
+  /* border: 5px solid yellowgreen; */
 }
 
 .nav-list{
-  border: 4px solid blue;
+  /* border: 4px solid blue; */
   width: 90%;
 }
 
 .nav-list-div{
-  border: 8px solid yellow;
+  /* border: 8px solid yellow; */
   padding: 0px;
 }
 
 .header-ul{
-  border: 3px solid black;
+  /* border: 3px solid black; */
   padding-left: -1px;
 }
 
