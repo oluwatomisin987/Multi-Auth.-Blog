@@ -59,11 +59,11 @@ label:before {
   cursor: pointer;
   transition: 0.4s;
 }
-label.active:before {
+.active:before {
   left: 24px;
   background: #fff;
 }
- body.night {
+ .night {
   background: #000;
   color: #fff;
   
@@ -1043,17 +1043,23 @@ h4 {
 }
 .footer-ul {
   display: block;
+    cursor: pointer;
 }
 .footer-li {
   margin-bottom: 1em;
   list-style: none;
+    cursor: pointer;
+      /* border: 5px solid red; */
 }
 .footer-link {
   color: #fff;
   margin-bottom: 1em;
+    cursor: pointer;
 }
+
 .footer-link:active {
   color: rgba(85, 85, 85, 1);
+  cursor: pointer;
 }
 
 input {
@@ -1237,6 +1243,8 @@ label:before {
   padding-left: 0px;
     padding-right: 0px;
 }
+
+
 
 label {
   width: 55px;

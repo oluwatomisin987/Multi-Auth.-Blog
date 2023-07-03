@@ -286,7 +286,7 @@ input:placeholder-shown {
 .footer-btn {
   /* border: 3px solid yellow; */
   position: absolute;
-  right: 4em;
+  right: 4rem;
   background-color: #000;
   color: #fff;
   padding: 1em;
@@ -466,7 +466,9 @@ input:placeholder-shown {
     margin-bottom: 2rem;
     font-size: 1rem;
   }
-  footer {
+
+
+  /* footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 2em 1em;
@@ -499,7 +501,7 @@ input:placeholder-shown {
   }
   .div-footer-one {
     margin-bottom: 0;
-  }
+  } */
 }
 
 
@@ -510,7 +512,67 @@ input:placeholder-shown {
         font-size: 2.5rem;
       }
     .footer-btn {
-        right: 7em;
-        width: 40%;
+        right: 2rem;
+        /* width: 40%; */
       }
+}
+
+
+
+
+@media (max-width: 500px) {
+  .ffoooter{
+  display: none;
+}
+
+.hidden-footer{
+  display: block;
+  width: 100%;
+  /* border: 5px solid red; */
+    padding: 15px;
+    margin-top: 25px;
+}
+
+
+.downn{
+  /* border: 4px solid wheat; */
+  display: none;
+ 
+}
+.first-upp{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  /* border: 3px solid black; */
+}
+
+.last-h44{
+  color: #fff;
+  line-height: 25px;
+}
+
+.sub{
+  background-color: #0f1b33;
+    position: absolute;
+  right: 18px;
+  color: #fff;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.2em;
+  width: 30%;
+  font-family: "Cascadia Code", sans-serif;
+
+}
+
+.last-sub{
+  /* border: 3px solid red; */
+
+  width: 100%;
+}
+
+.inputtt{
+  width: 70%;
+}
 }

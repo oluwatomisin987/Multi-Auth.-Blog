@@ -1,4 +1,4 @@
-var content = document.getElementsByTagName("body")[0];
+var content = document.querySelector(".bboddyy");
 
 var darkMode = document.getElementById("dark-change");
 
@@ -7,6 +7,16 @@ darkMode.addEventListener("click", function () {
   content.classList.toggle("night");
   // darkMode.classList.toggle("active");
 });
+
+
+
+
+
+
+
+
+
+
 
 
 
