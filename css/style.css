@@ -47,6 +47,7 @@ label {
   top: 32px;
   border: 2px solid #192d55;
   border-radius: 20px;
+  cursor: pointer;
 }
 label:before {
   position: absolute;
@@ -56,16 +57,18 @@ label:before {
   left: 1px;
   top: 1px;
   border-radius: 50%;
-  background: #192d55;
+  /* background: #192d55; */
+  background: #fff;
   cursor: pointer;
   transition: 0.4s;
 }
 .active:before {
   left: 24px;
-  background: #fff;
+  background: red;
 }
  .night {
-  background: #000;
+  /* background: #fff; */
+  background:  #192d55;
   color: #fff;
   
 } 
@@ -605,6 +608,9 @@ border: 4px solid limegreen;
   /* border: 4px solid hotpink; */
 }
 
+.late{
+  font-size: 2em;
+}
 .right-late{
   /* border: 4px solid sienna; */
   width: 70%;
@@ -1684,7 +1690,7 @@ font-size: 7px;
 
 .late {
   color: #555555;
-  font-size: 21px;
+  font-size: 2em;
   line-height: 24px;
     text-align: left;
     font-family: "Cascadia Code", sans-serif;
@@ -1695,7 +1701,7 @@ font-size: 7px;
 
   padding-top: 15px;
     display: flex;
-    border: 4px solid yellowgreen ;
+ 
   justify-content: space-between;
   text-align: center;
 
