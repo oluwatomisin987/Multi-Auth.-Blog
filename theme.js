@@ -8,37 +8,27 @@
 //   // darkMode.classList.toggle("active");
 // });
 
-
-
-
-
-
-
-
-
-
 /**
  * This function sets the color mode of the app based
  * on a variable stored in localStorage
  */
 const setColorMode = () => {
   const colorMode = localStorage.getItem("mode");
-//  const lightt = document.querySelector(".active")
-//   const nightt = document.querySelector(".night");
+  //  const lightt = document.querySelector(".active")
+  //   const nightt = document.querySelector(".night");
 
-const label = document.getElementById("dark-change")
+  const label = document.getElementById("dark-change");
 
-label.classList.add(colorMode === "dark" ? "active" : "night")
+  if (label) {
+    label.classList.add(colorMode === "dark" ? "active" : "night");
+  }
 
-// label.style.left = "20px", label.style.backgroundColor= "red" : label.style.color = "fff", label.style.backgroundColor= "blue"
 
 
-  const href =
-    colorMode === "dark" ? "dark-mode.css" : "light-mode.css";
+  const href = colorMode === "dark" ? "dark-mode.css" : "light-mode.css";
   const link = document.getElementById("stylesheet");
   link.setAttribute("href", href);
 };
-
 
 /**
  * This function toggles the color mode and refreshes
@@ -51,57 +41,16 @@ const toggleColorMode = () => {
   location.reload();
 };
 
-
 window.onload = () => {
   setColorMode(); // Set the color mode on load
 
   const toggleBtn = document.getElementById("dark-change");
-  // if (toggleBtn) {
-  //   // The toggle button is not on all pages
-  //   // this checks if the button is present before adding the event listener
-  //   toggleBtn.addEventListener("click", toggleColorMode);
-  // }
-
-  toggleBtn.addEventListener("click", toggleColorMode)
+  if (toggleBtn) {
+    // The toggle button is not on all pages
+    // this checks if the button is present before adding the event listener
+    toggleBtn.addEventListener("click", toggleColorMode);
+  }
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Set the width of the sidebar to 250px (show it) */
 function openNav() {

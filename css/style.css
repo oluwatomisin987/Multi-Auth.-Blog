@@ -147,6 +147,7 @@ a:hover {
 .header-link {
   color: rgba(85, 85, 85, 1);
   text-decoration: none;
+  font-size: 1em;
 }
 /* .header-list:active {
   color: rgba(25, 45, 85, 1);
@@ -278,12 +279,9 @@ background-image: url(images/wave.png);
 
 .girl-img{
   width: 45%;
-  /* border: 5px solid red; */
   position: relative;
   top: 80px;
-  /* margin-right: 40px; */
-  /* padding-top: 10px; */
-  /* margin-top: -120px; */
+
 }
 
 .girl-g{
@@ -303,12 +301,7 @@ background-image: url(images/wave.png);
 }
 
 
-.true-content {
-  /* position: absolute; */
-  /* width: 100%; */
-  /* bottom: -15px; */
-  /* right: 330px; */
-}
+
 .write-btn {
   padding: 20px 60px;
   background: #192d55;
@@ -379,14 +372,8 @@ background-image: url(images/wave.png);
   background-color: #192d55;
   border: 1px solid #192d55;
   border-radius: 15%;
-  /* display: flex; */
-
-  /* align-items: flex-start; */
   padding: 7px 16px;
-  /* gap: 10px; */
 
-  /* width: 60px; */
-  /* height: 39px; */
 }
 .btn-right:hover{
   background: #4A87FE;
@@ -507,7 +494,7 @@ border: 4px solid limegreen;
   font-family: "Cascadia Code";
   font-weight: 600;
   font-size: 2em;
-  line-height: 1.7rem;
+  line-height: 1.rem;
   color: #3e71d4;
 }
 

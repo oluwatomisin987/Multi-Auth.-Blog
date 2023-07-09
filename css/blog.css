@@ -1,7 +1,7 @@
  @import url('http://fonts.cdnfonts.com/css/cascadia-code');
  
 @import url('http://fonts.cdnfonts.com/css/open-sans');
-                
+               
                 
 
 * {
@@ -11,7 +11,7 @@
   }
   
   body {
-    font-family: 'cascadia-code', sans-serif;
+    /* font-family: 'cascadia-code', sans-serif; */
     width: 100%;
     max-width: 1440px;
     overflow-x: hidden;
@@ -74,6 +74,7 @@ body.night {
 
   header {
     font-family: "Cascadia Code", Consolas, "Courier New", monospace;
+    
   }
 
   .logo-div-header{
@@ -122,7 +123,9 @@ body.night {
   }
   .header-link {
     color: rgba(85, 85, 85, 1);
+  
     text-decoration: none;
+    font-size: 1em;
   }
   /* .header-list:active {
     color: rgba(25, 45, 85, 1);
@@ -130,6 +133,7 @@ body.night {
 
   .about {
     border-bottom: 2px solid rgba(62, 113, 212, 1);
+   
   }
   .header-btn {
     background-color: rgba(25, 45, 85, 1);
@@ -249,6 +253,7 @@ body.night {
   }
   
   .tp {
+  
     width: 97.5%;
     font-family: "Cascadia Code",Consolas,'Courier New',monospace;
     display: flex;
@@ -292,12 +297,14 @@ body.night {
   
   .sub {
     color: #3e71d4;;
-    font-family: "Cascadia Code",Consolas,'Courier New',monospace;
+    /* font-family: "Cascadia Code",Consolas,'Courier New',monospace; */
     font-weight: 600;
-    font-size: 1.7rem;
-    margin-bottom: 25px;
+    font-size: 1.7em;
+  
+    margin-bottom: 2.5rem;
     line-height: 1.8rem;
-    word-spacing: 8px;
+      font-family: "Cascadia Code";
+    /* word-spacing: 8px; */
   }
   
   .articles {
@@ -332,19 +339,100 @@ body.night {
   .xxx {
     color: #4a4a4a;
     /* margin-top: 25px; */
-    font-size: 1rem;
-    font-family: 'Open Sans', sans-serif;
-    font-family: sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5rem;
+    font-weight: 600;
+    width: 90%;
+    /* border: 5px solid blue; */
+    /* font-family: 'Open Sans', sans-serif; */
+    /* font-family: sans-serif; */
     /* line-height: 1.5rem; */
-    word-spacing: 7px;
+    /* word-spacing: 7px; */
   }
+
+  #p-two{
+    /* border: 5px solid yellow; */
+    padding-top: 1.5rem;
+  }
+  
+
+  #p-four{
+    /* border: 5px solid yellow; */
+    padding-top: 1.5rem;
+  }
+
+  #p-eight{
+    /* border: 5px solid yellow; */
+    padding-top: 1.5rem;
+  }
+
+  #p-nine{
+    /* border: 5px solid yellow; */
+    padding-top: 1.5rem;
+  }
+
+
+
+  #p-eleven{
+    /* border: 5px solid yellow; */
+    padding-top: 1.5rem;
+  }
+
+   #p-twelve{
+    /* border: 5px solid yellow; */
+    padding-top: 1.5rem;
+  }
+
+   #p-thirteen{
+    /* border: 5px solid yellow; */
+    padding-top: 1.5rem;
+  }
+
+
   
   .auth {
     display: flex;
-
     gap: 15px;
     margin-top: 40px;
   }
+
+  #auth-1{
+  padding-top: 2.6rem;
+  /* border: 4px solid black; */
+}
+
+  #auth-5{
+  padding-top: 2.6rem;
+  /* border: 4px solid black; */
+}
+
+  #auth-6{
+  padding-top: 2.7rem;
+  /* border: 4px solid black; */
+}
+
+  #auth-7{
+  padding-top: 4rem;
+  /* border: 4px solid black; */
+}
+
+  #auth-9{
+  padding-top: 0.3rem;
+  /* border: 4px solid black; */
+}
+
+  #auth-9{
+  padding-top: 0.3rem;
+  /* border: 4px solid black; */
+}
+
+  #auth-14{
+  padding-top: 1.5rem;
+  /* border: 4px solid black; */
+}
+ 
+ 
+ 
   
   .name {
     font-family: sans-serif;
