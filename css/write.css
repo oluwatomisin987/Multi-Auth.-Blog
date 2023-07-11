@@ -9,6 +9,8 @@
 }
 body{
  font-family: 'cascadia-code', sans-serif;
+ background-color: var(--bg-color1);
+
 }
 
 .wrapper{
@@ -163,6 +165,7 @@ margin: 30px 0;
     margin-left: 20px;
     border: none;
     outline: none;
+     background-color: var(--bg-color1);
    }
 
    textarea{
@@ -171,10 +174,13 @@ margin: 30px 0;
     height: 1000px;
     padding: 15px;
     margin: 20px 15px;
-    border-color: grey;
+    border-color: #555555;
     border: none;
     resize: none;
     /* margin: 5px 20px; */
+     background-color: var(--bg-color1);
+     color: gray;
+     font-size: 1.5em;
    }
 
    textarea :is(:focus, :valid){
@@ -254,6 +260,13 @@ margin: 30px 0;
 
    .main{
     width:100%;
+   }
+
+
+   
+   textarea{
+
+     font-size: 0.9em;
    }
 
    }

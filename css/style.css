@@ -10,7 +10,7 @@
   text-decoration: none;
 }
 
-.body {
+.bboddyy {
 
   /* border: 61px solid blue; 
   width:100%;
@@ -18,14 +18,27 @@
 
   /* margin: 0 auto;
     justify-content: center; */
+    /* border: 5px solid gold; */
+      background-color: var(--bg-color1);
+}
+
+/* .navvv{
+  border: 5px solid darkolivegreen;
+  width: 100%;
+} */
+
+.ffff{
+  /* border: 5px solid red; */
 }
 .body-cont {
   /* margin: 0 30px; */
   background-color: var(--bg-color1);
-  padding-left: 20px;
-    padding-right: 20px;
+  width: 95%;
+  margin: 0 auto;
+  /* padding-left: 20px; */
+    /* padding-right: 20px; */
+    /* border: 5px solid red; */
  
-   
 }
 h1,
 h2,
@@ -43,11 +56,12 @@ label {
   position: absolute;
   width: 50px;
   height: 27px;
-  right: 40px;
+  right: 50px;
   top: 32px;
   border: 2px solid #192d55;
   border-radius: 20px;
   cursor: pointer;
+    /* border: 4px solid red; */
 }
 label:before {
   position: absolute;
@@ -58,18 +72,20 @@ label:before {
   top: 1px;
   border-radius: 50%;
   /* background: #192d55; */
-  background: #fff;
+  background: black;
   cursor: pointer;
   transition: 0.4s;
 }
 .active:before {
   left: 24px;
-  background: red;
+  background: #fff;
 }
  .night {
-  /* background: #fff; */
-  background:  #192d55;
-  color: #fff;
+  background: #fff;
+  /* background:  #192d55; */
+  /* background: black; */
+
+  /* color: red; */
   
 } 
 
@@ -92,24 +108,19 @@ label:before {
   display: none;
 }
 
-/* .side-link-div{
-  display: none;
-}
-.side-link{
-  display: none;
-} */
 
-
-.logo-div-header{
-  /* display: flex; */
-  /* flex-shrink: 0; */
-}
 
 nav {
   display: flex;
-  margin: 1em 3em 0.5em 3em;
+  /* margin: 1em 3em 0.5em 0em; */
+  padding:1.2rem 5rem 1rem 1.5rem;
   align-items: center;
   font-size: 1.2rem;
+  /* border: 2px solid darkgray; */
+  width: 100%;
+  background-color: var(--bg-color1);
+  position: fixed;
+  z-index: 100;
 }
 .nav-list {
   width: 100%;
@@ -173,6 +184,8 @@ a:hover {
 .fa-bars {
   display: none !important;
 }
+
+
 
 
 
@@ -289,7 +302,6 @@ background-image: url(images/wave.png);
 }
 
 
-
 .true-p {
   color: #ffffff;
   font-weight: 400;
@@ -299,7 +311,6 @@ background-image: url(images/wave.png);
   padding-top: 20px;
   font-family: "Cascadia Code", sans-serif;
 }
-
 
 
 .write-btn {
@@ -325,7 +336,6 @@ background-image: url(images/wave.png);
   border-bottom: 1px solid  #AAAAAA;
 }
 
-
 .trend-nav {
   display: flex;
   justify-content: space-between;
@@ -334,7 +344,6 @@ background-image: url(images/wave.png);
    margin-bottom: 10px;
   /* border-bottom: 1px solid  #AAAAAA;  */
 }
-
 
 .t-wave-h2 {
   font-weight: 600;
@@ -358,7 +367,6 @@ background-image: url(images/wave.png);
 .right-arr{
   width: 100%;
 }
-
 
 
 .btn-left {
@@ -393,33 +401,11 @@ background-image: url(images/wave.png);
 }
 
 
-.sec-trend1 {
-  /* border: 3px solid gold; */
- /* width: 30.3%; */
- /* width: 50%; */
-} 
-
-
-
-.sec-trend2 {
-  /* border: 3px solid gold; */
- /* width: 30.3%; */
-  /* width: 50%; */
-}
-
-.sec-trend3 {
-  /* border: 3px solid gold; */
- /* width: 30.3%; */
-  /* width: 100%; */
-    /* width: 50%; */
-}
 
 .sec-trend4 {
   /* border: 3px solid gold; */
   display: none;
-   /* width: 50%; */
-     /* width: 50%; */
- /* width: 30.3%; */
+
 }
 
 
@@ -801,6 +787,10 @@ h3 {
   display: flex;
 }
 
+.brown{
+color: #555555;
+}
+
 
 /* CSS for Last section */
 .last-nav {
@@ -871,13 +861,7 @@ width: 100%;
   align-items: center;
   color: #6c757d;
 }
-/* 
-#top-post{
-    border-bottom: 1px solid #3E71D4; 
-}
-#gory{
-    border-bottom: 1px solid #3E71D4;
-} */
+
 
 .top-container {
   /* border: 4px solid fuchsia; */
@@ -930,15 +914,6 @@ width: 42%;
 .main-top{
   display: flex;
 }
-
-
-/* .top-categ-cont {
-  display: flex;
-  border: 5px solid gold;
-  flex-direction: column;
-  
-  margin-top: 20px;
-} */
 
 .see-categ {
   display: flex;
@@ -994,6 +969,7 @@ width: 42%;
 
 .ffoooter{
   display: block;
+  background-color: var(--footer-bg-color);
 
 }
 
@@ -1002,7 +978,7 @@ width: 42%;
   width: 100%;
   background-image: url(images/wave.png);
   background-repeat: no-repeat;
-  background-color: #315aa9;
+  /* background-color: #315aa9; */
   display: flex;
   justify-content: space-around;
   /* grid-template-columns: 1fr 1fr 1fr; */
@@ -1078,7 +1054,7 @@ input:placeholder-shown {
   position: absolute;
   right: 4rem;
   /* border: 41px solid yellowgreen; */
-  background-color: #000;
+  background-color: rgba(25, 45, 85, 1);
   color: #fff;
   padding: 1em;
   border: none;
@@ -1239,17 +1215,32 @@ label:before {
     padding-right: 0px;
 }
 
+nav{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+    padding:0.4rem 0rem 0.5rem 1rem;
+  align-items: center;
+  font-size: 1.2rem;
+  /* border: 2px solid darkgray; */
+  width: 100%;
+    background-color: var(--bg-color1);
+  position: fixed;
+  z-index: 100;
+}
 
 
-label {
-  width: 55px;
-  height: 30px;
-  right: 20px;
-  top: 19px;
+
+#dark-change {
+position: absolute;
+ width: 50px;
+ margin-top: 0rem;
+ /* right: -210px; */
 }
 
 label:before {
-  width: 25px;
+  width: 20px;
   height: 25px;
   border-radius: 53%;
 
@@ -1258,12 +1249,13 @@ label:before {
 .hamburger-menu{
   /* border: 3px solid blue; */
   display: block;
-  margin-right: 15px;
+  margin-right: 10px;
   /* width: 100%; */
 }
 
 .nav-div-2{
   display: block;
+  /* border: 4px solid yellow; */
 }
 
 
@@ -1363,7 +1355,8 @@ width: 10%;
 }
 
 .logo-div-header{
-  width: 70%;
+  width: 20%;
+  /* border: 4px solid red; */
 }
 
 .logo-div{
@@ -1372,16 +1365,19 @@ width: 10%;
   /* width: 100%; */
 }
 
-nav {
-margin: 15px;
-}
+/* nav {
+margin: 0px;
+} */
 
 .nav-list {
-  width: 100%;
+  width: 60%;
+  /* border: 6px solid black; */
 }
 .nav-list-div {
     display: none;
 }
+
+
 
 .header-cont {
   /* border: 4px solid gold; */
@@ -1391,6 +1387,8 @@ margin: 15px;
   /* top: 190px; */
   justify-content: center;
   align-items: center;
+  border: 4px solid red;
+  padding-top: 3rem;
 }
 
 
@@ -1410,7 +1408,7 @@ margin: 15px;
   width: 100%;
   transform: rotate(20deg);
   bottom: 0px;
-  top: 0px;
+  top: 100px;
   right: 0px;
   left: 0px;
   z-index: 0;
@@ -1424,7 +1422,8 @@ margin: 15px;
   top: 0px;
   /* margin-right: 40px; */
   /* padding-top: 10px; */
-  margin-top: 30px;
+  margin-top: 2rem;
+  
 }
 
 .girl-g{
@@ -1901,6 +1900,7 @@ display: none;
 .hidden-footer{
   display: block;
   width: 100%;
+    background-color: var(--footer-bg-color);
   /* border: 5px solid red; */
     padding: 15px;
     margin-top: 25px;

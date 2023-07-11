@@ -1,5 +1,5 @@
-:root {
-	--bgColor: #f5f5f5;
+/* :root {
+	 --bgColor: #f5f5f5;
 	--red: #ff0d0d;
 	--blue: #315aa9;
 	--green: #04aa47;
@@ -10,7 +10,7 @@
 	--black-shadow: rgba(0, 0, 0, 0.3);
 	--blue-shadow: rgba(0, 0, 255, 0.3);
 	--transition: all 0.2s ease-in-out;
-}
+}  */
 
 * {
 	margin: 0;
@@ -24,8 +24,15 @@ body {
 	min-height: 100vh;
 	background-color: var(--bgColor);
 	font-family: "Cascadia Code", sans-serif;
+	  background-color: var(--bg-color1);
 }
 
+
+
+
+.login-txt{
+	color: #555555;
+}
 .flex {
 	display: flex;
 	justify-content: center;
@@ -59,7 +66,12 @@ main {
 }
 
 .container h1 {
-	color: var(--blue);
+	
+}
+
+.log-sig-txt{
+	font-size: 1.2em;
+	color: black;
 }
 
 .socials {
@@ -71,11 +83,11 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border: 1px solid var(--blue);
+
 	border-radius: 50%;
 	width: 50px;
 	height: 50px;
-	transition: var(--transition);
+
 }
 
 .socials .icon img {
@@ -83,22 +95,27 @@ main {
 }
 
 .socials .icon:hover {
-	background-color: var(--light-blue);
+	
 }
 
 .option-text {
 	font-size: 1.1rem;
-	color: var(--blue);
+	color: #555555;
 	margin-bottom: 2rem;
 }
 
 form .input-field {
 	margin-bottom: 2rem;
+	border: 2px solid #555555;
 	background-color: transparent;
 	padding: 0.8rem;
 	border-radius: 0.8rem;
-	border: 1px solid var(--bright-blue);
-	box-shadow: 0 1px 3px var(--black-shadow);
+
+}
+
+.iii{
+	background: transparent;
+	color: #555555;
 }
 
 form .input-field input:focus {
@@ -106,11 +123,11 @@ form .input-field input:focus {
 }
 
 form .input-field:focus-within {
-	box-shadow: 0 1px 8px var(--blue-shadow);
+
 }
 
 form .input-field.filled:focus-within {
-	box-shadow: 0 1px 8px var(--blue-shadow);
+
 }
 
 form .input-field span {
@@ -126,7 +143,7 @@ form .input-field input {
 	flex: 1;
 	font-size: 1rem;
 	border: none;
-	background-color: transparent;
+
 	font-family: "Cascadia Code", sans-serif;
 }
 
@@ -137,20 +154,18 @@ form .input-field input {
 	width: 100%;
 	border: none;
 	border-radius: 0.8rem;
-	color: var(--white);
-	background-color: var(--blue);
 	padding: 0.6rem;
-	transition: var(--transition);
 	cursor: pointer;
 	font-family: "Cascadia Code", sans-serif;
+	background-color: rgba(25, 45, 85, 1);
 }
 
 .submit-btn:hover {
-	background-color: var(--bright-blue);
+	
 }
 
 .submit-btn:active {
-	background-color: var(--dark-blue);
+
 }
 
 .submit-btn span {
@@ -164,13 +179,13 @@ form .input-field input {
 
 .forgot-password {
 	display: block;
-	color: var(--red);
+	
 	margin-bottom: 1rem;
 	font-size: 0.875rem;
 }
 
 .agree-checkbox {
-	color: var(--green);
+
 	margin-bottom: 2rem;
 	font-size: 0.875rem;
 	text-align: left;
@@ -192,17 +207,21 @@ form .input-field input {
 	top: 50%;
 	left: 50%;
 	translate: -50% -50%;
-	background-color: var(--bgColor);
+
 	padding: 0 1.5rem;
 }
 
 .divider hr {
 	height: 1px;
 	border: none;
-	background-color: black;
+	background-color: #555555;
 }
 
 .new-user {
 	color: #555555;
 	margin: 3rem 0 1rem;
+}
+
+.agree{
+	color: #555555;
 }

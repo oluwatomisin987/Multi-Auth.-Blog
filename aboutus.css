@@ -14,13 +14,21 @@
   scroll-behavior: smooth;
 } */
 body {
-  background-color: #f5f5f5;
+background-color: var(--bg-color1);
+/* border: 5px solid red; */
 }
 image {
   max-width: 100%;
 }
-header {
+.about-header {
   font-family: "Cascadia Code", Consolas, "Courier New", monospace;
+  /* border: 5px solid red; */
+
+width: 100%;
+}
+
+.about-pp{
+  color: #555555;
 }
 
 
@@ -36,9 +44,17 @@ header {
 
 nav {
   display: flex;
-  margin: 1em 3em 0.5em 3em;
+  justify-content: space-between;
+background-color: var(--bg-color1);
+  /* margin: 1em 3em 0.5em 3em; */
+padding: 1em 1em 1em 1.5em;
   align-items: center;
   font-size: 1.2rem;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+
 }
 .nav-list {
   width: 100%;
@@ -143,7 +159,16 @@ body.night {
   color: #fff;
 }
 
+
+
+
+
 /* End of css for theme mode */
+.container{
+  margin-top: 6rem;
+}
+
+
 .main-img-div {
   font-family: "Cascadia Code", Consolas, "Courier New", monospace;
   width: 100%;
@@ -211,6 +236,7 @@ h1 {
 
 .ffoooter{
   display: block;
+    background-color: var(--footer-bg-color);
 }
   
 
@@ -219,7 +245,9 @@ h1 {
   width: 100%;
   background-image: url(images/wave.png);
   background-repeat: no-repeat;
-  background-color: #315aa9;
+  /* background-color: #315aa9; */
+    background-color: var(--footer-bg-color);
+
   display: flex;
   justify-content: space-around;
   /* grid-template-columns: 1fr 1fr 1fr; */
@@ -287,7 +315,7 @@ input:placeholder-shown {
   /* border: 3px solid yellow; */
   position: absolute;
   right: 4rem;
-  background-color: #000;
+  background-color: rgba(25, 45, 85, 1);
   color: #fff;
   padding: 1em;
   border: none;
@@ -346,32 +374,6 @@ input:placeholder-shown {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (min-width: 1000px) and (max-width: 1200px) {
     .footer-btn {
         right: 3em;
@@ -399,10 +401,32 @@ input:placeholder-shown {
     right: 1em;
   }
 }
+
+
+
+
+
 @media (max-width: 700px) {
-  nav {
-    margin: 1.5em 1em 0.5em 1em;
+
+
+  .logo-div-header {
+    width: 40%;
+    margin-left: 0em;
   }
+  .logo-div {
+    width: 100%;
+  }
+
+  nav {
+    margin: 0em 0em 0em 0em;
+      display: flex;
+  justify-content: space-between;
+background-color: var(--bg-color1);
+padding: 1em 1em 1em 1.5em;
+/* border: 4px solid red; */
+  }
+
+  
   .nav-list {
     position: fixed;
     top: 0;
@@ -433,22 +457,16 @@ input:placeholder-shown {
   .left {
     margin-left: 1.5em;
   }
-  .fa-bars {
+  /* .fa-bars {
     display: block !important;
     position: relative;
     z-index: 5;
     font-size: 1.3rem;
-  }
+  } */
   li {
     margin-bottom: 1.5em;
   }
-  .logo-div-header {
-    width: 30%;
-    margin-left: 1em;
-  }
-  .logo-div {
-    width: 100%;
-  }
+
   .main-text {
     width: 90%;
   }
@@ -457,10 +475,11 @@ input:placeholder-shown {
   }
   .main-img-p {
     position: absolute;
-    top: 15%;
-    left: 25%;
+    top: 25%;
+    left: 30%;
+    text-align: center;
     color: #fff;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
   h1 {
     margin-bottom: 2rem;
@@ -468,40 +487,6 @@ input:placeholder-shown {
   }
 
 
-  /* footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 2em 1em;
-  }
-  .logo-div-footer {
-    grid-template-columns: 1fr 1fr 1fr;
-    color: #fff;
-    padding: 3em 1em;
-    font-family: "Cascadia Code",Consolas,'Courier New',monospace;
-    min-height: 40vh;
-    margin-bottom: 1em;
-    width: 70%;
-  }
-  .footer-logo {
-    width: 100%;
-  }
-  .fa-brands {
-    font-size: 0.8rem;
-  }
-  .footer-list {
-    margin-left: auto;
-  }
-  input {
-    width: 100%;
-    display: inline-block;
-  }
-  .footer-btn {
-    right: 5em;
-    width: 40%;
-  }
-  .div-footer-one {
-    margin-bottom: 0;
-  } */
 }
 
 
@@ -528,6 +513,7 @@ input:placeholder-shown {
 .hidden-footer{
   display: block;
   width: 100%;
+    background-color: var(--footer-bg-color);
   /* border: 5px solid red; */
     padding: 15px;
     margin-top: 25px;

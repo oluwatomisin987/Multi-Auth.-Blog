@@ -61,3 +61,24 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidepanel").style.width = "0";
 }
+
+
+
+
+
+
+
+
+// WRITE PAGE
+
+     let btnClear = document.querySelector('button');
+        let inputs = document.querySelectorAll('input');
+        let input = document.querySelectorAll('textarea');
+
+        btnClear.addEventListener('click', () => {
+            inputs.forEach(input => input.value = '');
+        });
+
+        btnClear.addEventListener('click', () => {
+            input.forEach(textarea => textarea.value = '');
+        });
